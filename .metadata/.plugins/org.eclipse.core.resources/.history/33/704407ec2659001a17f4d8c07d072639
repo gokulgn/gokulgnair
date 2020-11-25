@@ -1,0 +1,66 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+double fact(int a)                                                       //function to calculate factorial of a number
+{
+double product=1;
+for(int i=0;a!=0;i++)
+{
+product=product * a--;
+}
+return product;
+}
+
+int main()
+{
+int n=1;
+double e=2.71828;
+double rn;
+double a;
+cout << "Enter the value of a : ";					     //take input from the user for the value of a
+cin >> a;
+for(double c=0;c<=10.5;c=c+0.5)                                              //check for a wide value of c
+{
+cout << "Value of c is : " << c << endl;
+n=1;
+for(int i=0;i<100;i++)
+{
+rn=((pow(e,c)*pow((10.5-a),n+1))/(fact(n+1)));                               //Rn=(e^c*(10.5-a)^(n+1))/(n+1)!
+cout << n << '\t' << " Rn : " << rn << endl;
+n++;
+if(rn<pow(10,-12))							    //stop computing the value of Rn once it exceeds 10^-12
+{
+break;
+}
+}
+cout << "There are " << n << " terms" << endl;					   //display number of itreations taken for each value of c
+}
+cout << "Value of e^10.5 is " << exp(10.5) << endl;                           //calculate the value of e^10.5
+return 0;
+}
+
+Part 2)
+
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main()
+{
+float x=10, sum=1, term=1, temp=0;// float e=2.718;
+int i=0;
+
+while(temp != sum)
+{
+i++;
+term = term * x/i;
+temp=sum;
+sum=sum+term;
+cout << i <<'\t' << term <<'\t'<< sum << endl;
+//if(pow(e,10.5)>sum)
+//break;
+}
+cout << "exact value : " << exp((double)x) << endl;
+return 0;
+}
+
+

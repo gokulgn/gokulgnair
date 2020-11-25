@@ -1,0 +1,1 @@
+elipson.o: ../elipson.cpp

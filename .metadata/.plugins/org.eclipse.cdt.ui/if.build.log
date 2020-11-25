@@ -1,0 +1,15 @@
+01:47:28 **** Incremental Build of configuration Debug for project if ****
+make all 
+Building file: ../if.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"if.d" -MT"if.o" -o "if.o" "../if.c"
+Finished building: ../if.c
+ 
+Building target: if
+Invoking: GCC C Linker
+gcc  -o "if"  ./if.o   
+Finished building target: if
+ 
+
+01:47:29 Build Finished. 0 errors, 0 warnings. (took 1s.432ms)
+

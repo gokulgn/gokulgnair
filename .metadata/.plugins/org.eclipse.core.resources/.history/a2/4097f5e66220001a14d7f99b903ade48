@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main(){
+
+float p=1000.00;
+float rate=6;
+float t=30;
+float a=p;
+float c;
+for(int i=0;i<t;i++)
+a=a+(a*(rate/100));
+c=a-p;
+printf("Your Final Amount is : ");
+printf("%f \n",a);
+printf("Your Gain is : ");
+printf("%f \n",c);
+return 0;
+}

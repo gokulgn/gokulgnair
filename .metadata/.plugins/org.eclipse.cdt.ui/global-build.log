@@ -1,0 +1,15 @@
+12:44:18 **** Build of configuration Debug for project sample ****
+make all 
+Building file: ../sample.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"sample.d" -MT"sample.o" -o "sample.o" "../sample.cpp"
+Finished building: ../sample.cpp
+ 
+Building target: sample
+Invoking: GCC C++ Linker
+g++  -o "sample"  ./sample.o   
+Finished building target: sample
+ 
+12:44:24 **** Incremental Build of configuration Debug for project sample ****
+make all 
+make: Nothing to be done for 'all'.

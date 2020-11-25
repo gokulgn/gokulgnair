@@ -1,0 +1,43 @@
+/*
+ ============================================================================
+ Name        : aa.c
+ Author      : gokul
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int age;
+	char name,days;
+	int m;
+
+printf("enter your name:");
+scanf("%s",&name);
+printf("enter your age :");
+scanf("%d", &age);
+if(age>=18)
+{
+	printf("you are eligible for benefits");
+}
+else
+{
+printf("sorry,you are not eligible for benefits ");
+}
+printf("\nplease enter the month you born (in number 01-12)?");
+scanf("%d",&m);
+if ("m<02")
+{
+	printf("you can apply on mondays");
+}
+else
+{
+	printf("you can apply on fridays");
+}
+
+	return 0;
+}

@@ -1,0 +1,16 @@
+12:37:20 **** Incremental Build of configuration Debug for project lab5 ****
+make all 
+Building file: ../lab5.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"lab5.d" -MT"lab5.o" -o "lab5.o" "../lab5.c"
+../lab5.c: In function ‘main’:
+../lab5.c:16:1: error: ‘value’ undeclared (first use in this function)
+ value = pow;
+ ^~~~~
+../lab5.c:16:1: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [lab5.o] Error 1
+subdir.mk:18: recipe for target 'lab5.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+
+12:37:20 Build Failed. 3 errors, 0 warnings. (took 476ms)
+

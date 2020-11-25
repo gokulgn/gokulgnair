@@ -1,0 +1,1 @@
+mark.o: ../mark.c

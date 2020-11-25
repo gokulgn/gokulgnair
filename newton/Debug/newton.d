@@ -1,0 +1,1 @@
+newton.o: ../newton.c

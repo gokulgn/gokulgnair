@@ -1,0 +1,46 @@
+/*
+ ============================================================================
+ Name        : aa.c
+ Author      : gokul
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int age;
+	char name,days;
+	int m;
+
+printf("enter your name:");
+scanf("%s",&name);
+printf("enter your age :");
+scanf("%d", &age);
+if(age>=18)
+{
+	printf("you are eligible for benefits");
+}
+else
+{
+printf("sorry,you are not eligible for benefits ");
+}
+
+if(m>1 || m==1) {
+    printf("\nEither n is greater than m, or n is equal to 15\n");
+}
+else if( m == 3 && m >2 ) {
+    printf("n is equal to 5 and m is equal to 10!\n");
+}
+else if ( !(m == 6)) {
+    printf("It is not true that n is equal to 6!\n");
+}
+else if (m > 5) {
+    printf("n is greater than 5!\n");
+}
+
+return 0;
+}

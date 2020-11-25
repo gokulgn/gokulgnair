@@ -1,0 +1,1 @@
+eclipson.o: ../eclipson.cpp

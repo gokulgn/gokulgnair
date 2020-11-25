@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;lu decomposition/ludecomposition&apos; to &apos;ludecomposition.c&apos;" description="Rename resource &apos;ludecomposition&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ludecomposition" name="ludecomposition.c" stamp="1585878986009" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;lu decomposition/ludecomposition.c&apos; to &apos;ludecomposition.cpp&apos;" description="Rename resource &apos;ludecomposition.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="ludecomposition.c" name="ludecomposition.cpp" stamp="1585878999373" updateReferences="true"/>
+</session>

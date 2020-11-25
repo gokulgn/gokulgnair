@@ -1,0 +1,15 @@
+12:37:17 **** Build of configuration Debug for project c++ programs ****
+make all 
+Building file: ../src/c++ programs.c
+Invoking: Cross GCC Compiler
+arm-linux-gnueabihf-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/c++ programs.d" -MT"src/c++\ programs.d" -o "src/c++ programs.o" "../src/c++ programs.c"
+Finished building: ../src/c++ programs.c
+ 
+Building target: c++ programs
+Invoking: Cross GCC Linker
+arm-linux-gnueabihf-gcc  -o "c++ programs"  ./src/c++\ programs.o   
+Finished building target: c++ programs
+ 
+
+12:37:18 Build Finished. 0 errors, 0 warnings. (took 582ms)
+

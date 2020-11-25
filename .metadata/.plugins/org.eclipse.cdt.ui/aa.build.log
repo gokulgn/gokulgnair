@@ -1,0 +1,18 @@
+17:17:50 **** Incremental Build of configuration Debug for project aa ****
+make all 
+Building file: ../src/aa.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/aa.d" -MT"src/aa.o" -o "src/aa.o" "../src/aa.c"
+../src/aa.c: In function ‘main’:
+../src/aa.c:32:1: error: ‘else’ without a previous ‘if’
+ else if(m>1 || m==1) {
+ ^~~~
+../src/aa.c:16:12: warning: unused variable ‘days’ [-Wunused-variable]
+  char name,days;
+            ^~~~
+make: *** [src/aa.o] Error 1
+src/subdir.mk:18: recipe for target 'src/aa.o' failed
+"make all" terminated with exit code 2. Build might be incomplete.
+
+17:17:50 Build Failed. 3 errors, 1 warnings. (took 69ms)
+

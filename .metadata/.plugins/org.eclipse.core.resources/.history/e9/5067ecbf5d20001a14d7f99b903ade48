@@ -1,0 +1,52 @@
+/*
+ ============================================================================
+ Name        : greetings.c
+ Author      : gokul
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+char name[50];
+char greet[50]="Greetings ";
+int a;
+int b;
+printf("Enter your name\n");
+scanf("%s",name);
+strcat(greet,name);
+a=strlen(name);
+b=a+16;
+for(int i=0;i<b;i++)   /* first line */
+{
+printf("*");
+}
+printf("\n");
+printf("*");       /* second line */
+    for(int i=0;i<b-2;i++)
+{
+printf(" ");
+}
+        printf("*\n");
+printf("*  ");
+printf("%s",greet);
+printf("  *\n");
+printf("*");       /* third line */
+for(int i=0;i<b-2;i++)
+{
+printf(" ");
+}
+   printf("*\n");
+    for(int i=0;i<b;i++)   /* fourth line */
+{
+printf("*");
+}
+
+return 0;
+}

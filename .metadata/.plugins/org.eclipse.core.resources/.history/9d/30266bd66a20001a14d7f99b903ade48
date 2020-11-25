@@ -1,0 +1,84 @@
+#include<stdio.h>
+#include<stdlib.h>
+#define MAXSIZE 100
+#define  ACTIVE 1U
+#define INACTIVE 0U
+
+typedef struct linkedList
+{
+int data;
+int* next;
+int active;
+}linkList;
+
+linkList link[MAXSIZE];
+
+int dataNumber=0;
+
+void addData(void)
+{
+int NUM;
+printf("Enter the number you want to add : ");
+scanf("%d",&NUM);
+link[dataNumber].data=NUM;
+link[dataNumber].next = &link[dataNumber+1].data;
+link[dataNumber].active = ACTIVE;
+dataNumber++;
+}
+
+void printList(void)
+{
+for(int i=0;i<=dataNumber;i++)
+{
+if(link[i].active == ACTIVE)
+printf("%d : %d\n",i,link[i].data);
+}
+}
+
+void deleteData(void)
+{
+int NUM;
+printf("Enter the data you want to delete : ");
+scanf("%d",&NUM);
+if(NUM == 0)
+{
+link[NUM].active = INACTIVE;
+}
+else
+{
+link[NUM].active = INACTIVE;
+link[NUM-1].next= &link[NUM+1].data;
+}
+}
+
+int main()
+{
+int option;
+while(1)
+{
+printf("Choose the correct option : 1->Add data 2->Node delete 3->Print list 4-> Exit : ");
+scanf("%d",&option);
+if(option== 1)
+{
+	addData();
+}
+else if(option==2)
+{
+	deleteData();
+}
+else if(option==3)
+{
+	printList();
+}
+else if(option==4)
+{
+	exit(0);
+}
+else
+{
+	printf("Invalid Choice \n");
+}
+
+}
+return 0;
+}
